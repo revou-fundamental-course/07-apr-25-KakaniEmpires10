@@ -1,9 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const userName = prompt("Masukkan nama Anda: ");
+
+  const name = document.getElementById("user-name");
   const form = document.getElementById("form-submit");
   const formSubscribe = document.getElementById("subscribe-form");
   const footerDate = document.getElementById("date");
   const slides = document.querySelectorAll(".slide");
   const dots = document.querySelectorAll(".dot");
+
+  //---------------- Dynamic user name at snackbar -------------------//
+
+  if (userName) {
+    name.textContent = userName;
+  } else {
+    name.textContent = "Pengunjung";
+  }
 
   //---------------- Footer Dynamic Year -------------------//
 

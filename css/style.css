@@ -285,6 +285,29 @@ main {
   text-align: center;
 }
 
+.snackbar-bottom {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: var(--soft-color);
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--hard-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+
+.snackbar-bottom > h6 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--hard-color);
+}
+
+.snackbar-bottom > p {
+  font-size: 0.75rem;
+  color: #333;
+}
+
 .hero-text {
   font-size: 3.5rem;
   font-weight: 600;
