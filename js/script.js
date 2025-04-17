@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentIndex = 0;
   let interval;
-  const slideInterval = 5000;
+  const slideInterval = 4000; // 4 Detik Delay Perpindahan
 
   // Function to show specific slide
   function showSlide(index) {
