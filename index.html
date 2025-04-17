@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="assets\favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Paperless Hospital</title>
+  </head>
+  <body>
+    <!--------------- Navbar Section ------------>
+
+    <header class="nav-wrapper">
+      <div class="logo">
+        <img src="assets/favicon.png" alt="logo" />
+        <span>Paperless Hospital</span>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-items">
+          <li class="nav-item"><a href="#">Tentang Kami</a></li>
+          <li class="nav-item"><a href="#">Layanan</a></li>
+          <li class="nav-item"><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+      <button class="btn-primary">Sign Up</button>
+    </header>
+
+    <!--------------- Main Section ------------>
+
+    <main>
+      <!--------------- Hero Section ------------>
+      <section id="hero">
+        <span class="badge badge-primary"
+          ><i class="fa-solid fa-clipboard"></i> Focus on Your Patients</span
+        >
+        <div class="center-text-wrapper">
+          <h1 class="hero-text">
+            Empower Healthcare to Patient
+            <span class="text-gradient">Focus with AI</span>
+          </h1>
+          <p class="subtitle">
+            We specialize in providing experienced programmer experts and
+            artificial intelligence (AI) implementation in hospitals.
+          </p>
+        </div>
+        <div class="hero-action">
+          <button class="btn-primary">Get Started</button>
+          <button class="btn-secondary">Learn More</button>
+        </div>
+        <div class="hero-content">
+          <div class="hero-slider">
+            <div class="slide-container">
+              <img src="assets/Hero_img_1.png" alt="hero-img" class="slide active">
+              <img src="assets/Hero_img_2.png" alt="hero-img" class="slide">
+              <img src="assets/Hero_img_3.png" alt="hero-img" class="slide">
+              <img src="assets/Hero_img_4.png" alt="hero-img" class="slide">
+            </div>
+            <div class="slider-controls">
+              <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------------- About Section ------------>
+      <section id="about">
+        <article class="about-content">
+          <h2 class="title">Siapa Kami ?</h2>
+          <p>
+            Kami adalah perusahaan yang memfokuskan diri dalam menghadirkan dan
+            mensupport rumah sakit serta instansi kesehatan lainnya dalam
+            meng-optimalkan pelayanan kepada pasien dengan memberikan software
+            berbasis web dan di lengkapi dengan AI Medical Scribe dan IT support
+            local.
+          </p>
+          <button class="btn-outline" style="width: fit-content">
+            <i class="fa-solid fa-list-check" style="margin-right: 0.5rem"></i>
+            Visi & Misi
+          </button>
+        </article>
+        <div class="about-video">
+          <video poster="assets/thumb_paperless.png" controls>
+            <source src="assets/intro.mp4" type="video/mp4" />
+            <source src="assets/intro.webm" type="video/webm" />
+          </video>
+        </div>
+      </section>
+
+      <!--------------- Why Section ------------>
+
+      <section id="why-us" class="full-width-section">
+        <span class="badge badge-secondary">Why Choose us ?</span>
+        <div class="center-text-wrapper">
+          <h2 class="title-lg">
+            Our diverse suite of Healthcare
+            <span class="text-gradient">Managament Solutions</span>
+          </h2>
+          <p>
+            Here are the 4 benefits of the AI medical scribe from
+            PaperlessHospital.id
+          </p>
+        </div>
+        <div class="why-container">
+          <div class="card card-flex">
+            <div>
+              <h3>Simplifies Patient Medical Documentation</h3>
+              <p>
+                The AI medical scribe streamlines the process of filling out
+                patient medical records, ensuring accurate and efficient
+                documentation.
+              </p>
+            </div>
+            <img
+              src="assets/medical_record.png"
+              alt="Medical Documentation Icon"
+            />
+          </div>
+
+          <div class="card card-flex">
+            <div>
+              <h3>Accelerates Automatic ICD-10 and ICD-9 Coding</h3>
+              <p>
+                It assists in speeding up the coding process by automatically
+                generating accurate ICD-10 and ICD-9 codes based on patient
+                data, reducing manual effort.
+              </p>
+            </div>
+            <img src="assets/icd-10.png" alt="ICD-10 Coding Icon" />
+          </div>
+
+          <div class="card card-flex">
+            <div>
+              <h3>Speeds Up the Claims Process</h3>
+              <p>
+                By automatically filling in the required data, the AI helps
+                expedite the insurance claims process, reducing delays and
+                errors.
+              </p>
+            </div>
+            <img src="assets/speed.png" alt="Claims Process Icon" />
+          </div>
+
+          <div class="card card-flex">
+            <div>
+              <h3>Provides Real-Time Financial Dashboard Analysis</h3>
+              <p>
+                Offers a real-time financial analysis dashboard that allows
+                healthcare providers to evaluate insurance revenue potential,
+                enhancing decision-making for hospital operations.
+              </p>
+            </div>
+            <img
+              src="assets/mobile_dashboard.png"
+              alt="Financial Dashboard Icon"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--------------- Portfolio Section ------------>
+      <section id="clients">
+        <span class="badge badge-primary">Our Clients</span>
+
+        <div class="clients-header">
+          <h2 class="hero-text">
+            Most Affordable And Trusted Hospital Manajemen Solution
+          </h2>
+          <div class="clients-image">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D5612AQHooRz39pU7jA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1693799708021?e=2147483647&v=beta&t=q4bn_UMhuXjpqhpg_ekDl1zHqdYh2iK0F-yIOpC84n4"
+              alt="client-image"
+            />
+          </div>
+        </div>
+
+        <p class="trusted-text">We Have been Trusted by</p>
+
+        <div class="cards-grid">
+          <div class="card">
+            <p class="client-number">2</p>
+            <p class="client-label">A Typed Hospital</p>
+          </div>
+          <div class="card">
+            <p class="client-number">3</p>
+            <p class="client-label">B Typed Hospital</p>
+          </div>
+          <div class="card">
+            <p class="client-number">9</p>
+            <p class="client-label">C Typed Hospital</p>
+          </div>
+        </div>
+      </section>
+
+      <!--------------- Team Section ------------>
+
+      <section id="profile" class="full-width-section">
+        <span class="badge badge-secondary">Tim Kami</span>
+        <div class="center-text-wrapper">
+          <h2 class="title-lg">
+            Meet Our <span class="text-gradient">Team</span>
+          </h2>
+          <p>
+            Kami adalah tim dengan pengalaman lapangan yang nyata dan
+            profesional
+          </p>
+        </div>
+        <div class="profile-wrapper swiper">
+            <ul class="card-list swiper-wrapper">
+              <li class="card-item swiper-slide">
+                <div class="card-container">
+                  <img
+                    src="assets/alim.jpeg"
+                    alt="card-image"
+                    class="card-image"
+                    style="object-position: center;"
+                  />
+                  <p class="badge ceo badge-primary">CEO</p>
+                  <h3 class="profile-title">Alim</h3>
+                  <p>Dengan latar belakang sebagai perawat dan melihat ketidak-efisienan dalam sistem rumah sakit kita, ingin membuat sistem kita menjadi lebih simple dan lebih baik</p>
+                </div>
+              </li>
+              <li class="card-item swiper-slide">
+                <div class="card-container">
+                  <img
+                    src="assets/arfan.jpeg"
+                    alt="card-image"
+                    class="card-image"
+                  />
+                  <p class="badge ui badge-primary">UI/UX</p>
+                  <h3 class="profile-title">Arfan</h3>
+                  <p>Berpengalaman dalam menangani berbagai design web dan mobile dengan tujuan untuk mudah dan indah saat dilihat oleh target pengguna aplikasi</p>
+                </div>
+              </li>
+              <li class="card-item swiper-slide">
+                <div class="card-container">
+                  <img
+                    src="assets/thumb_paperless.png"
+                    alt="card-image"
+                    class="card-image"
+                  />
+                  <p class="badge backend badge-primary">Backend Dev</p>
+                  <h3 class="profile-title">Mulkan</h3>
+                    <p>Berpengalaman dalam membangun dan mengelola sistem backend yang scalable, aman, dan efisien untuk mendukung kebutuhan aplikasi modern.</p>
+                </div>
+              </li>
+              <li class="card-item swiper-slide">
+                <div class="card-container">
+                  <img
+                    src="assets/fahmi.jpeg"
+                    alt="card-image"
+                    class="card-image"
+                  />
+                  <p class="badge frontend badge-primary">Frontend Dev</p>
+                  <h3 class="profile-title">Fahmi</h3>
+                    <p>Berpengalaman dalam membangun antarmuka pengguna yang interaktif, responsif, dan estetis untuk meningkatkan pengalaman pengguna.</p>
+                </div>
+              </li>
+              <li class="card-item swiper-slide">
+                <div class="card-container">
+                  <img
+                    src="assets/thumb_paperless.png"
+                    alt="card-image"
+                    class="card-image"
+                  />
+                  <p class="badge fullstack badge-primary">Fullstack Dev</p>
+                  <h3 class="profile-title">Sayuti</h3>
+                    <p>Berpengalaman dalam mengembangkan solusi end-to-end yang mengintegrasikan frontend dan backend untuk menciptakan aplikasi yang efisien dan user-friendly.</p>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--------------- Kontak Section ------------>
+
+      <section id="contact">
+        <span class="badge badge-primary">Hubungi Kami</span>
+        <div class="contact-header" style="margin-top: 2rem">
+          <h2 class="title">Start Optimizing Your Workflow Today​</h2>
+        </div>
+        <div class="contact-wrapper">
+          <form id="form-submit" class="form-submit">
+            <small style="color: gray"
+              ><i>Note: Harap Isi data anda dengan sebenar-benarnya</i></small
+            >
+            <div class="form-group">
+              <label for="name">Nama <span style="color: red">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Masukkan Nama Anda..."
+              />
+              <span class="err-message name" style="display: none"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="tgl_lahir"
+                >Tanggal Lahir <span style="color: red">*</span></label
+              >
+              <input type="date" id="tgl_lahir" name="tgl_lahir" />
+              <span class="err-message tgl_lahir" style="display: none"></span>
+            </div>
+
+            <div class="form-group">
+              <label>Jenis Kelamin <span style="color: red">*</span></label>
+              <div class="gender-options">
+                <label class="gender-card">
+                  <input type="radio" name="gender" value="Laki-laki" checked />
+                  <div class="content">
+                    <i class="fa-solid fa-mars"></i>
+                    <span>Laki-laki</span>
+                  </div>
+                </label>
+
+                <label class="gender-card">
+                  <input type="radio" name="gender" value="Perempuan" />
+                  <div class="content">
+                    <i class="fa-solid fa-venus"></i>
+                    <span>Perempuan</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message"
+                >Tulis Pesanmu <span style="color: red">*</span></label
+              >
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                placeholder="Tulis Pesan Anda..."
+              ></textarea>
+              <span class="err-message message" style="display: none"></span>
+            </div>
+
+            <button class="btn-primary" type="submit">
+              <i class="fa-solid fa-paper-plane"></i> Kirim
+            </button>
+          </form>
+          <div class="form-output">
+            <small
+              ><i><strong>Form Output:</strong></i></small
+            >
+            <div style="display: flex; flex-direction: column; gap: 1rem">
+              <p>Nama : <span id="output-name"></span></p>
+              <p>Tanggal Lahir : <span id="output-tgl"></span></p>
+              <p>Gender : <span id="output-gender"></span></p>
+              <p>Message : <span id="output-message"></span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--------------- Footer Section ------------>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Paperless Hospital</h3>
+          <p>
+            Perusahaan yang berfokus pada pengembangan software berbasis web dan
+            AI Medical Scribe untuk rumah sakit dan instansi kesehatan lainnya.
+          </p>
+          <a href="#about">read more →</a>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Kerja sama</a></li>
+            <li><a href="#">AI Medis</a></li>
+            <li><a href="#">SIMRS</a></li>
+            <li><a href="#">Help & Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Tag Cloud</h4>
+          <div class="tags">
+            <span>AI</span><span>Medical Scribe</span><span>Medic</span
+            ><span>RME</span><span>Doctor</span> <span>Nurse</span
+            ><span>Management</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Subscribe</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter email address" required />
+            <button type="submit">➤</button>
+          </form>
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright &copy; <span id="date"></span> | Muhammad Alim Kakani</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
