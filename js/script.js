@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const userName = prompt("Masukkan nama Anda: ");
 
   const name = document.getElementById("user-name");
+  const btn_modal = document.getElementById("btn_visi");
+  const modal = document.getElementById("modal_visi");
+  const closeBtn = document.getElementById("modal_close");
   const form = document.getElementById("form-submit");
   const formSubscribe = document.getElementById("subscribe-form");
   const footerDate = document.getElementById("date");
@@ -79,6 +82,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   showSlide(0);
   startAutoSlide();
+
+  //---------------- Modal Function -------------------//
+
+  btn_modal.addEventListener("click", function () {
+    modal.showModal();
+  });
+
+  // get from Web Dev Simplified
+  modal.addEventListener("click", function (e) {
+    const modalDimensions = modal.getBoundingClientRect();
+    if (
+      e.clientX < modalDimensions.left ||
+      e.clientX > modalDimensions.right ||
+      e.clientY < modalDimensions.top ||
+      e.clientY > modalDimensions.bottom
+    ) {
+      modal.close();
+    }
+  });
+
+  closeBtn.addEventListener("click", function () {
+    modal.close();
+  });
 
   //---------------- swiper for profile card -------------------//
 

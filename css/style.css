@@ -243,6 +243,94 @@ main {
 }
 
 /* ===============
+      Modals
+================ */
+
+/* get from FrontEnd Masters Blog */
+dialog {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: var(--radius);
+  background-color: #fff;
+  padding: 3rem 4rem;
+  box-shadow: none;
+  width: 90%;
+  max-width: 800px;
+
+  transition: display 0.3s allow-discrete, overlay 0.3s allow-discrete;
+
+  animation: close 0.3s forwards;
+  
+  &[open] {
+    animation: open 0.3s forwards;
+  }
+}
+
+dialog > button {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+dialog > h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--medium-color);
+}
+
+dialog > ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+dialog > ul > li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+dialog > ul > li > i {
+  color: var(--hard-color);
+  margin-top: 4px ;
+}
+
+dialog > ul > li > p {
+  font-size: 0.9rem;
+  color: #242424;
+}
+
+@keyframes open {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes close {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ===============
     Hero Section
 ================ */
 
@@ -990,6 +1078,15 @@ main {
     font-size: 0.9rem;
   }
 
+  dialog {
+    padding: 2rem;
+    width: 90%;
+  }
+  
+  dialog > h4 {
+    font-size: 1.3rem;
+  }
+
   main {
     padding: 15px 20px;
   }
@@ -1118,6 +1215,29 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+  }
+
+  dialog {
+    padding: 1.5rem;
+    width: 95%;
+  }
+  
+  dialog > h4 {
+    font-size: 1.2rem;
+  }
+
+  dialog > ul > li {
+    flex-direction: column;
+  }
+  
+  dialog > ul > li > p {
+    font-size: 0.85rem;
+  }
+  
+  dialog > button {
+    top: 0.3rem;
+    right: 0.7rem;
+    font-size: 1.2rem;
   }
 
   .btn-primary,
