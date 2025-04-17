@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("form-submit");
+  const formSubscribe = document.getElementById("subscribe-form");
   const footerDate = document.getElementById("date");
   const slides = document.querySelectorAll(".slide");
   const dots = document.querySelectorAll(".dot");
 
-   //---------------- Footer Dynamic Year -------------------//
+  //---------------- Footer Dynamic Year -------------------//
 
   const currentYear = new Date().getFullYear();
   footerDate.innerHTML = currentYear;
@@ -160,6 +161,8 @@ document.addEventListener("DOMContentLoaded", () => {
         : "-";
       document.getElementById("output-message").textContent =
         message.value.trim();
+
+      form.reset();
     }
 
     return isValid;
@@ -169,6 +172,24 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     validateForm();
+  });
+
+  formSubscribe.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = document.getElementById("email").value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email === "") {
+      showError("email", "Email wajib diisi.");
+    } else if (!emailRegex.test(email)) {
+      showError("email", "Format email tidak valid.");
+    } else {
+      clearError("email");
+
+      document.getElementById("output-email").textContent = email;
+
+      formSubscribe.reset();
+    }
   });
 
   //---------------- Hamburger Menu -------------------//

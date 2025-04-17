@@ -372,6 +372,7 @@
               <p>Tanggal Lahir : <span id="output-tgl"></span></p>
               <p>Gender : <span id="output-gender"></span></p>
               <p>Message : <span id="output-message"></span></p>
+              <p>Email : <span id="output-email"></span></p>
             </div>
           </div>
         </div>
@@ -409,10 +410,11 @@
         </div>
         <div class="footer-col">
           <h4>Subscribe</h4>
-          <form class="subscribe-form">
-            <input type="email" placeholder="Enter email address" required />
+          <form class="subscribe-form" id="subscribe-form">
+            <input type="email" id="email" name="email" placeholder="Enter email address" required />
             <button type="submit">➤</button>
           </form>
+          <span class="err-message email" style="display: none"></span>
           <h4>Follow Us</h4>
           <div class="social-icons">
             <a href="#"><i class="fab fa-twitter"></i></a>
